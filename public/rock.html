@@ -7,32 +7,74 @@
   <meta charset="utf-8">
 </head>
 
+<style>
+* {
+  border: thin red dashed;
+  box-sizing: border-box;
+}
+.button {
+  color: teal; 
+  border: 2px teal solid; 
+  padding-top: 5px; 
+  padding: 5px 15px; 
+  border-radius: 5px; 
+  text-decoration: none;"
+  }
+
+.player-card {
+  border: thin green solid;
+  width: 49%;
+}
+
+.computer-card {
+  border: thin red solid;
+  width: 49%;
+}
+
+.row {
+  display:flex;
+  justify-content: space-between;
+}
+
+.one-third {
+  width:32%
+}
+</style>
 <body>
-  <div>
-    <a href="/rock" style="color: teal border-left: 2px blue solid; padding-top 5px padding: 5px 15px; border-radius 5px; text-decoration: none">
+<div class="row">
+  <div class="one-third">
+    <a class="button" href="/rock">
       Play Rock
     </a>
   </div>
 
-  <div>
-    <a href="/paper">
+  <div class="one-third">
+    <a class="button" href="/paper">
       Play Paper
     </a>
   </div>
 
-  <div>
-    <a href="/scissors">
+  <div class="one-third">
+    <a class="button" href="/scissors">
       Play Scissors
     </a>
   </div>
+  </div> 
+
+<div class="row">
+<div class="player-card">
 
   <h2 style="color: green;">
     We played rock!
   </h2>
+</div>
 
+<div class="computer-card">
   <h2 style="color: red;"">
     They played paper!
   </h2>
+</div>
+</div>
 
   <h2 style="color: red;">
     We lost!
